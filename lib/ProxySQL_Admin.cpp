@@ -4727,6 +4727,7 @@ void update_modules_metrics() {
 	if (MyHGM) {
 		MyHGM->p_update_connection_pool();
 		MyHGM->p_update_myconnpoll();
+		MyHGM->p_update_mysql_gtid_executed();
 	}
 	// Update monitor metrics
 	if (GloMyMon) {
